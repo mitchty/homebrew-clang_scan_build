@@ -5,7 +5,6 @@ require 'formula'
 class ClangScanBuild < Formula
   homepage 'http://llvm.org'
   url "http://llvm.org/svn/llvm-project/cfe/trunk/tools/scan-build", :using => :svn
-  depends_on 'svn'
   depends_on 'llvm' => 'with-clang'
 
   def install
